@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title><!-- TODO (zbell) update -->tp-1314-13</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" /><!-- TODO (zbell) add -->
+    <meta name="keywords" content="" /><!-- TODO (zbell) add -->
     <meta name="author" content="Pavol Zbell" />
     <link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="stylesheets/font-awesome.min.css" rel="stylesheet" media="screen">
@@ -11,17 +13,34 @@
       <script src="javascripts/html5shiv.js"></script>
       <script src="javascripts/respond.min.js"></script>
     <![endif]-->
+
+    <!-- TODO (zbell) review css -->
     <style type="text/css">
       body { margin-top: 50px; font-size: 16px; }
       header { margin: 0px; }
       footer { margin: 100px 0px 50px; }
-      section:first-child { margin-top: 100px; }
-      section h2 { padding-top: 40px; }
+
+      h3 small { font-size: 16px; }
       p { text-align: justify; }
+
+      .media { margin-top: 50px; }
+      .media > .pull-left { margin-right: 40px; }
+      .media .list-unstyled { margin-left: 7px; }
+      .media .list-unstyled li:first-letter { margin-left: -5px; border-left: 5px solid #eee; }
+      .media .list-unstyled li:first-letter:after { content: " "; }
+
+      .sidebar { position: fixed; }
+      .sidebar ul ul { display: none; font-size: 14px; }
+      .sidebar ul ul li > a { padding-left: 25px; }
+      .sidebar ul li.active > a { font-weight: bolder; }
+      .sidebar ul ul li.active > a { font-weight: bolder; }
+      .sidebar .active ul { display: block; }
+      .sidebar li > a, .sidebar li > a.active { border-radius: 5px; }
+      .sidebar li > a:focus, .sidebar li > a:hover { background: transparent; }
     </style>
   </head>
-  <body>
-    <header class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <body data-spy="scroll" data-target="#sidebar"> <!-- TODO (zbell) consider data-offset -->
+    <header id="header-navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,10 +48,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class="navbar-brand" href="."><!-- TODO (zbell) update -->tp-1314-13</a>
         </div>
-        <div class="collapse navbar-collapse text-center">
+        <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href=""><i class="icon-"></i></a></li>
+            <li><a href="#about">O projekte</a></li>
+            <li><a href="#documents">Dokumenty</a></li>
+            <li><a href="#authors">Autori</a></li>
           </ul>
         </div>
       </div>
@@ -40,14 +62,339 @@
   
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-1 col-md-10">
+        <div class="col-md-10" role="main">
 
           <section>
             <div class="page-header">
-              <h1 id=""></h1>
+              <h1 id="about">O projekte</h1>
             </div>
+
+            <p>
+              A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum (aluminium oxide). The red color is caused mainly by the presence of the element chromium. Its name comes from ruber, Latin for red. Other varieties of gem-quality corundum are called sapphires. The ruby is considered one of the four precious stones, together with the sapphire, the emerald, and the diamond.[1]
+            <p>
+            </p>
+              Prices of rubies are primarily determined by color. The brightest and most valuable "red" called blood-red, commands a large premium over other rubies of similar quality. After color follows clarity: similar to diamonds, a clear stone will command a premium, but a ruby without any needle-like rutile inclusions may indicate that the stone has been treated. Cut and carat (weight) are also an important factor in determining the price.
+            </p>
+            <p>
+              Rubies have a hardness of 9.0 on the Mohs scale of mineral hardness. Among the natural gems only moissanite and diamond are harder, with diamond having a Mohs hardness of 10.0 and moissonite falling somewhere in between corundum (ruby) and diamond in hardness. Ruby is α-alumina (the most stable form of Al2O3) in which a small fraction of the aluminium3+ ions are replaced by chromium3+ ions. Each Cr3+ is surrounded octahedrally by six O2- ions. This crystallographic arrangement strongly affects each Cr3+, resulting in light absorption in the yellow-green region of the spectrum and thus in the red color of the gem. When yellow-green light is absorbed by Cr3+, it is re-emitted as red luminescence.[2] This red emission adds to the red color perceived by the subtraction of green and violet light from white light, and adds luster to the gem's appearance. When the optical arrangement is such that the emission is stimulated by 694-nanometer photons reflecting back and forth between two mirrors, the emission grows strongly in intensity. This effect was used by Theodore Maiman in 1960 to make the first successful laser, based on ruby.
+            </p>
+            <p>
+              All natural rubies have imperfections in them, including color impurities and inclusions of rutile needles known as "silk". Gemologists use these needle inclusions found in natural rubies to distinguish them from synthetics, simulants, or substitutes. Usually the rough stone is heated before cutting. Almost all rubies today are treated in some form, with heat treatment being the most common practice. However, rubies that are completely untreated but still of excellent quality command a large premium.
+            </p>
+            <p>
+              Some rubies show a three-point or six-point asterism or "star". These rubies are cut into cabochons to display the effect properly. Asterisms are best visible with a single-light source, and move across the stone as the light moves or the stone is rotated. Such effects occur when light is reflected off the "silk" (the structurally oriented rutile needle inclusions) in a certain way. This is one example where inclusions increase the value of a gemstone. Furthermore, rubies can show color changes—though this occurs very rarely—as well as chatoyancy or the "cat's eye" effect.
+            </p>
+
           </section>
 
+          <section>
+            <div class="page-header">
+              <h1 id="documents">Dokumenty</h1>
+            </div>
+
+            <p>
+              A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum (aluminium oxide). The red color is caused mainly by the presence of the element chromium. Its name comes from ruber, Latin for red. Other varieties of gem-quality corundum are called sapphires. The ruby is considered one of the four precious stones, together with the sapphire, the emerald, and the diamond.[1]
+            <p>
+            </p>
+            Prices of rubies are primarily determined by color. The brightest and most valuable "red" called blood-red, commands a large premium over other rubies of similar quality. After color follows clarity: similar to diamonds, a clear stone will command a premium, but a ruby without any needle-like rutile inclusions may indicate that the stone has been treated. Cut and carat (weight) are also an important factor in determining the price.
+            </p>
+            <p>
+              Rubies have a hardness of 9.0 on the Mohs scale of mineral hardness. Among the natural gems only moissanite and diamond are harder, with diamond having a Mohs hardness of 10.0 and moissonite falling somewhere in between corundum (ruby) and diamond in hardness. Ruby is α-alumina (the most stable form of Al2O3) in which a small fraction of the aluminium3+ ions are replaced by chromium3+ ions. Each Cr3+ is surrounded octahedrally by six O2- ions. This crystallographic arrangement strongly affects each Cr3+, resulting in light absorption in the yellow-green region of the spectrum and thus in the red color of the gem. When yellow-green light is absorbed by Cr3+, it is re-emitted as red luminescence.[2] This red emission adds to the red color perceived by the subtraction of green and violet light from white light, and adds luster to the gem's appearance. When the optical arrangement is such that the emission is stimulated by 694-nanometer photons reflecting back and forth between two mirrors, the emission grows strongly in intensity. This effect was used by Theodore Maiman in 1960 to make the first successful laser, based on ruby.
+            </p>
+            <p>
+              All natural rubies have imperfections in them, including color impurities and inclusions of rutile needles known as "silk". Gemologists use these needle inclusions found in natural rubies to distinguish them from synthetics, simulants, or substitutes. Usually the rough stone is heated before cutting. Almost all rubies today are treated in some form, with heat treatment being the most common practice. However, rubies that are completely untreated but still of excellent quality command a large premium.
+            </p>
+            <p>
+              Some rubies show a three-point or six-point asterism or "star". These rubies are cut into cabochons to display the effect properly. Asterisms are best visible with a single-light source, and move across the stone as the light moves or the stone is rotated. Such effects occur when light is reflected off the "silk" (the structurally oriented rutile needle inclusions) in a certain way. This is one example where inclusions increase the value of a gemstone. Furthermore, rubies can show color changes—though this occurs very rarely—as well as chatoyancy or the "cat's eye" effect.
+            </p>
+
+            <h1 id="documents-documentation">Dokumentácia</h1>
+
+            <p>
+              A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum (aluminium oxide). The red color is caused mainly by the presence of the element chromium. Its name comes from ruber, Latin for red. Other varieties of gem-quality corundum are called sapphires. The ruby is considered one of the four precious stones, together with the sapphire, the emerald, and the diamond.[1]
+            <p>
+            </p>
+            Prices of rubies are primarily determined by color. The brightest and most valuable "red" called blood-red, commands a large premium over other rubies of similar quality. After color follows clarity: similar to diamonds, a clear stone will command a premium, but a ruby without any needle-like rutile inclusions may indicate that the stone has been treated. Cut and carat (weight) are also an important factor in determining the price.
+            </p>
+            <p>
+              Rubies have a hardness of 9.0 on the Mohs scale of mineral hardness. Among the natural gems only moissanite and diamond are harder, with diamond having a Mohs hardness of 10.0 and moissonite falling somewhere in between corundum (ruby) and diamond in hardness. Ruby is α-alumina (the most stable form of Al2O3) in which a small fraction of the aluminium3+ ions are replaced by chromium3+ ions. Each Cr3+ is surrounded octahedrally by six O2- ions. This crystallographic arrangement strongly affects each Cr3+, resulting in light absorption in the yellow-green region of the spectrum and thus in the red color of the gem. When yellow-green light is absorbed by Cr3+, it is re-emitted as red luminescence.[2] This red emission adds to the red color perceived by the subtraction of green and violet light from white light, and adds luster to the gem's appearance. When the optical arrangement is such that the emission is stimulated by 694-nanometer photons reflecting back and forth between two mirrors, the emission grows strongly in intensity. This effect was used by Theodore Maiman in 1960 to make the first successful laser, based on ruby.
+            </p>
+            <p>
+              All natural rubies have imperfections in them, including color impurities and inclusions of rutile needles known as "silk". Gemologists use these needle inclusions found in natural rubies to distinguish them from synthetics, simulants, or substitutes. Usually the rough stone is heated before cutting. Almost all rubies today are treated in some form, with heat treatment being the most common practice. However, rubies that are completely untreated but still of excellent quality command a large premium.
+            </p>
+            <p>
+              Some rubies show a three-point or six-point asterism or "star". These rubies are cut into cabochons to display the effect properly. Asterisms are best visible with a single-light source, and move across the stone as the light moves or the stone is rotated. Such effects occur when light is reflected off the "silk" (the structurally oriented rutile needle inclusions) in a certain way. This is one example where inclusions increase the value of a gemstone. Furthermore, rubies can show color changes—though this occurs very rarely—as well as chatoyancy or the "cat's eye" effect.
+            </p>
+
+            <h1 id="documents-reports">Zápisnice</h1>
+
+            <p>
+              A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum (aluminium oxide). The red color is caused mainly by the presence of the element chromium. Its name comes from ruber, Latin for red. Other varieties of gem-quality corundum are called sapphires. The ruby is considered one of the four precious stones, together with the sapphire, the emerald, and the diamond.[1]
+            <p>
+            </p>
+            Prices of rubies are primarily determined by color. The brightest and most valuable "red" called blood-red, commands a large premium over other rubies of similar quality. After color follows clarity: similar to diamonds, a clear stone will command a premium, but a ruby without any needle-like rutile inclusions may indicate that the stone has been treated. Cut and carat (weight) are also an important factor in determining the price.
+            </p>
+            <p>
+              Rubies have a hardness of 9.0 on the Mohs scale of mineral hardness. Among the natural gems only moissanite and diamond are harder, with diamond having a Mohs hardness of 10.0 and moissonite falling somewhere in between corundum (ruby) and diamond in hardness. Ruby is α-alumina (the most stable form of Al2O3) in which a small fraction of the aluminium3+ ions are replaced by chromium3+ ions. Each Cr3+ is surrounded octahedrally by six O2- ions. This crystallographic arrangement strongly affects each Cr3+, resulting in light absorption in the yellow-green region of the spectrum and thus in the red color of the gem. When yellow-green light is absorbed by Cr3+, it is re-emitted as red luminescence.[2] This red emission adds to the red color perceived by the subtraction of green and violet light from white light, and adds luster to the gem's appearance. When the optical arrangement is such that the emission is stimulated by 694-nanometer photons reflecting back and forth between two mirrors, the emission grows strongly in intensity. This effect was used by Theodore Maiman in 1960 to make the first successful laser, based on ruby.
+            </p>
+            <p>
+              All natural rubies have imperfections in them, including color impurities and inclusions of rutile needles known as "silk". Gemologists use these needle inclusions found in natural rubies to distinguish them from synthetics, simulants, or substitutes. Usually the rough stone is heated before cutting. Almost all rubies today are treated in some form, with heat treatment being the most common practice. However, rubies that are completely untreated but still of excellent quality command a large premium.
+            </p>
+            <p>
+              Some rubies show a three-point or six-point asterism or "star". These rubies are cut into cabochons to display the effect properly. Asterisms are best visible with a single-light source, and move across the stone as the light moves or the stone is rotated. Such effects occur when light is reflected off the "silk" (the structurally oriented rutile needle inclusions) in a certain way. This is one example where inclusions increase the value of a gemstone. Furthermore, rubies can show color changes—though this occurs very rarely—as well as chatoyancy or the "cat's eye" effect.
+            </p>
+
+          </section>
+
+          <section>
+            <div class="page-header">
+              <h1 id="authors">Autori</h1>
+            </div>
+
+            <div class="media">
+              <img class="img-circle media-object pull-left" src="https://gravatar.com/avatar/6c6421dbcdaa3b679a7f3045c06d7dc3?rating=pg&size=180" />
+
+              <div class="media-body">
+                <h2 id="authors-dobsovic" class="media-heading">
+                  Bc. Rastislav Dobšovič
+                  <small>Manažment plánovania</small>
+                </h2>
+
+                <ul class="list-unstyled">
+                  <li>
+                    Bakalársky projekt Optické rozpoznávanie notových záznamov, C++, OpenCV
+                  </li>
+                  <li>
+                    Pracovná skúsenosť na pozícii databázového vývojára pre Orange Slovensko
+                  </li>
+                  <li>
+                    Pracuje alebo pracoval s Oracle Database, PL/SQL, MySQL
+                  </li>
+                  <li>
+                    Zaujíma sa o procesy návrhu softvéru, UML, návrhové vzory
+                  </li>
+                  <li>
+                    Hráva na klavíri
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="media">
+              <img class="img-circle media-object pull-left" src="http://gravatar.com/avatar/66951fb0fb20ba104ec37d17d8f7a8a6?rating=pg&size=180" />
+
+              <div class="media-body">
+                <h2 id="authors-grznar" class="media-heading">
+                  Bc. Marek Grznár
+                  <small>Manažment kvality</small>
+                </h2>
+
+                <ul class="list-unstyled">
+                  <li>
+                    Bakalársky projekt Adaptívna spätná väzba vo webovom systéme, Ruby on Rails, Alef
+                  </li>
+                  <li>
+                    Pracovná skúsenosť s technológiami ASP.NET, C#, SVN
+                  </li>
+                  <li>
+                    Dobre pozná JavaScript, MySQL, git, Linux
+                  </li>
+                  <li>
+                    Člen výskumej skupiny <a href="http://pewe.fiit.stuba.sk">PeWe</a>
+                  </li>
+                  <li>
+                    Zaujíma sa o vizualizáciu dát vo webových aplikáciách
+                  </li>
+                  <li>
+                    Obľubuje futbal
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="media">
+              <img class="img-circle media-object pull-left" src="https://gravatar.com/avatar/0eadf3ad055c749bd6b06c37899cc6b3?rating=pg&size=180" />
+
+              <div class="media-body">
+                <h2 id="authors-harinek" class="media-heading">
+                  Bc. Jozef Harinek
+                  <small>Manažment komunikácie a ľudských zdrojov, vedúci tímu</small>
+                </h2>
+
+                <ul class="list-unstyled">
+                  <li>
+                    Bakalársky projekt Automatická extrakcia klúčových slov z výučbových dokumentov, Ruby on Rails, výskumný článok na konferenciu DocEng, príspevok na IIT.SRC
+                  </li>
+                  <li>
+                    Na letnej stáži v Nemecku pracoval s C++, Qt, SVN, skúsenosti s MySQL, SQLite, git, Linux
+                  </li>
+                  <li>
+                    Člen výskumej skupiny <a href="http://pewe.fiit.stuba.sk">PeWe</a> a člen výskumného semináru počas bakalárskeho štúdia
+                  </li>
+                  <li>
+                    Zaujíma sa o NLP, webové aplikácie a ľahké ontológie
+                  </li>
+                  <li>
+                    Baví ho lezenie po skalách
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="media">
+              <img class="img-circle media-object pull-left" src="https://gravatar.com/avatar/f55298b16490cdfa08cca375b7e1eed5?rating=pg&size=180" />
+
+              <div class="media-body">
+                <h2 id="authors-molnar" class="media-heading">
+                  Bc. Samuel Molnár
+                  <small>Manažment podpory vývoja a integrácie</small>
+                </h2>
+
+                <ul class="list-unstyled">
+                  <li>
+                    Bakalársky projekt Navigácia pomocou oblakov doležitých slov, Ruby on Rails, Annota, Elasticsearch, backbone.js, CoffeeScript, výskumný článok na SMAP a IIT.SRC
+                  </li>
+                  <li>
+                    Autor projektu <a href="http://otvorenesudy.sk">Otvorené Súdy</a>, indikátory činnosti sudcov, Elasticsearch, správa servera
+                  </li>
+                  <li>
+                    Presadzuje TDD, má intenzívnu skúsenosť s Rspec, Capybara, Elasticsearch, git, Linux
+                  </li>
+                  <li>
+                    Člen výskumej skupiny <a href="http://pewe.fiit.stuba.sk">PeWe</a> a člen výskumného semináru počas bakalárskeho štúdia
+                  </li>
+                  <li>
+                    Zaujíma sa o tvorbu webových aplikácií, navigáciu na webe, big data
+                  </li>
+                  <li>
+                    Rád púšťa šarkany
+                  </li>
+                </ul>
+
+                <ul class="nav nav-pills pull-left">
+                  <li><a href="https://github.com/smolnar">GitHub</a></li>
+                  <li><a href="https://twitter.com/samuelmolnar">Twitter</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="media">
+              <img class="img-circle media-object pull-left" src="https://gravatar.com/avatar/926416be73397917b648b9969bf60afd?rating=pg&size=180" />
+
+              <div class="media-body">
+                <h2 id="authors-palenik" class="media-heading">
+                  Bc. Peter Páleník
+                  <small>Manažment dokumentovania</small>
+                </h2>
+
+                <ul class="list-unstyled">
+                  <li>
+                    Bakalársky projekt Cestná sieť ako komplexný graf, C#, MySQL
+                  </li>
+                  <li>
+                    Pracuje s WPF, .NET technológiami
+                  </li>
+                  <li>
+                    Rekreačne hráva futbal
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="media">
+              <img class="img-circle media-object pull-left" src="https://gravatar.com/avatar/5c3a520715c907c84d1facb9fc856e90?rating=pg&size=180" />
+
+              <div class="media-body">
+                <h2 id="authors-poizl" class="media-heading">
+                  Bc. Dušan Poizl
+                  <small>Manažment monitorovania</small>
+                </h2>
+
+                <ul class="list-unstyled">
+                  <li>
+                    Bakalársky projekt Simulácia celulárnych automatov na GPU, C++, OpenCL, Qt
+                  </li>
+                  <li>
+                    Má skúsenosti s OpenGL, Gstreamer, git, Linux admin, iOS vývoj, MySQL, Ruby on Rails
+                  </li>
+                  <li>
+                    Zaujíma sa o skladanie astronomických fotografií
+                  </li>
+                  <li>
+                    Učí sa po japonsky
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="media">
+              <img class="img-circle media-object pull-left" src="https://gravatar.com/avatar/731047c9f1caf55b172002cec9f3816e?rating=pg&size=180" />
+
+              <div class="media-body">
+                <h2 id="authors-zbell" class="media-heading">
+                  Bc. Pavol Zbell
+                  <small>Manažment rizík, hlavný architekt a zástupca vedúceho tímu</small>
+                </h2>
+
+                <ul class="list-unstyled">
+                  <li>
+                    Bakalársky projekt <a href="http://mirai.fiit.stuba.sk/projects/Zbell/bachelor-2013">Vyhľadávanie v zdrojových kódoch so zohľadnením kontextu</a>, Java, Eclipse APIs, Elasticsearch, pokročilé OOP v Jave a návrhové vzory všeobecne
+                  </li>
+                  <li>
+                    Autor projektu <a href="http://otvorenesudy.sk">Otvorené Súdy</a>, sťahovanie a spracovanie dát, správa databázy, dizajn
+                  </li>
+                  <li>
+                    Má skúsenosti s Twitter Bootstrap, Resque, Redis, git, Linux
+                  </li>
+                  <li>
+                    Člen výskumej skupiny <a href="http://pewe.fiit.stuba.sk">PeWe</a> a člen výskumného semináru počas bakalárskeho štúdia
+                  </li>
+                  <li>
+                    Zaujíma sa o získavanie a spracovanie znalostí pre potreby vývoja softvéru, aktívne pracuje na projekte <a href="http://perconik.fiit.stuba.sk">PerConIK</a>
+                  </li>
+                  <li>
+                    Lyžuje freeride
+                  </li>
+                </ul>
+
+                <ul class="nav nav-pills pull-left">
+                  <li><a href="https://github.com/pavolzbell">GitHub</a></li>
+                  <li><a href="https://twitter.com/pavolzbell">Twitter</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </section>
+
+        </div>
+
+        <div class="col-md-2">
+          <div id="sidebar" class="sidebar" role="complementary">
+            <ul class="nav">
+              <li>
+                <a href="#about">O projekte</a>
+              </li>
+              <li>
+                <a href="#documents">Dokumenty</a>
+                <ul class="nav">
+                  <li><a href="#documents-documentation">Dokumentácia</a></li>
+                  <li><a href="#documents-reports">Zápisnice</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#authors">Autori</a>
+                <ul class="nav">
+                  <li><a href="#authors-dobsovic">Rastislav Dobšovič</a></li>
+                  <li><a href="#authors-grznar">Marek Grznár</a></li>
+                  <li><a href="#authors-harinek">Jozef Harinek</a></li>
+                  <li><a href="#authors-molnar">Samuel Molnár</a></li>
+                  <li><a href="#authors-palenik">Peter Páleník</a></li>
+                  <li><a href="#authors-poizl">Dušan Poizl</a></li>
+                  <li><a href="#authors-zbell">Pavol Zbell</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -55,7 +402,7 @@
     <footer>
       <div class="container">
         <p class="text-center text-muted">
-          <small>Copyright 2013 . All Rights Reserved.</small>
+          <small>Copyright 2013 Rastislav Dobšovič, Marek Grznár, Jozef Harinek, Samuel Molnár, Peter Páleník, Dušan Poizl, Pavol Zbell. All Rights Reserved.</small>
         </p>
       </div>
     </footer>
