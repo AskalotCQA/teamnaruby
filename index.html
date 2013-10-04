@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title><!-- TODO (zbell) update -->tp-1314-13</title>
+    <title><!-- TODO (zbell) update -->Project Name Here</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" /><!-- TODO (zbell) add -->
     <meta name="keywords" content="" /><!-- TODO (zbell) add -->
@@ -18,25 +18,32 @@
     <style type="text/css">
       body { margin-top: 50px; font-size: 16px; }
       header { margin: 0px; }
-      footer { margin: 100px 0px 50px; }
+      footer { margin: 500px 0px 100px; font-size: 14px; }
 
-      h3 small { font-size: 16px; }
+      h1, h2 { padding-top: 100px; }
+
       p { text-align: justify; }
 
+      .text-muted a { color: #999; }
+      .text-muted a:focus, .text-muted a:hover { color: #888; }
+
       .media { margin-top: 50px; }
-      .media > .pull-left { margin-right: 40px; }
+      .media > .pull-left { margin: 100px 40px 0px 0px; }
       .media .list-unstyled { margin-left: 7px; }
       .media .list-unstyled li:first-letter { margin-left: -5px; border-left: 5px solid #eee; }
       .media .list-unstyled li:first-letter:after { content: " "; }
 
-      .sidebar { position: fixed; }
+      .nav > li > a { display: inline-block; }
+      .nav li > a:focus, .nav li > a:hover { background: transparent; text-decoration: underline; }
+
+      .sidebar { margin-top: 0px; }
+      .sidebar.affix { position: fixed; top: 100px; }
       .sidebar ul ul { display: none; font-size: 14px; }
       .sidebar ul ul li > a { padding-left: 25px; }
       .sidebar ul li.active > a { font-weight: bolder; }
       .sidebar ul ul li.active > a { font-weight: bolder; }
       .sidebar .active ul { display: block; }
       .sidebar li > a, .sidebar li > a.active { border-radius: 5px; }
-      .sidebar li > a:focus, .sidebar li > a:hover { background: transparent; }
     </style>
   </head>
   <body data-spy="scroll" data-target="#sidebar"> <!-- TODO (zbell) consider data-offset -->
@@ -59,10 +66,22 @@
         </div>
       </div>
     </header>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Project Name Here</h1> <!-- TODO (zbell) add -->
+        <p><abbr title="Community Question Answering">CQA</abbr> informačný systém ďalšej generácie Vám prináša tím naЯuby</p>
+      </div>
+    </div>
   
     <div class="container">
       <div class="row">
         <div class="col-md-10" role="main">
+          <ul class="nav">
+            <li><a href="http://stuba.sk"><em>Slovenská technická univerzita v Bratislave</em></a></li>
+            <li><a href="http://fiit.stuba.sk"><em>Fakulta informatiky a informačných technológií</em></a></li>
+            <li><a href="http://fiit.stuba.sk/~bielik/courses/tp-slov"><em>Tímový projekt 2013/14</em></a></li>
+          </ul>
 
           <section>
             <div class="page-header">
@@ -108,7 +127,7 @@
               Some rubies show a three-point or six-point asterism or "star". These rubies are cut into cabochons to display the effect properly. Asterisms are best visible with a single-light source, and move across the stone as the light moves or the stone is rotated. Such effects occur when light is reflected off the "silk" (the structurally oriented rutile needle inclusions) in a certain way. This is one example where inclusions increase the value of a gemstone. Furthermore, rubies can show color changes—though this occurs very rarely—as well as chatoyancy or the "cat's eye" effect.
             </p>
 
-            <h1 id="documents-documentation">Dokumentácia</h1>
+            <h2 id="documents-documentation">Dokumentácia</h2>
 
             <p>
               A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum (aluminium oxide). The red color is caused mainly by the presence of the element chromium. Its name comes from ruber, Latin for red. Other varieties of gem-quality corundum are called sapphires. The ruby is considered one of the four precious stones, together with the sapphire, the emerald, and the diamond.[1]
@@ -126,7 +145,7 @@
               Some rubies show a three-point or six-point asterism or "star". These rubies are cut into cabochons to display the effect properly. Asterisms are best visible with a single-light source, and move across the stone as the light moves or the stone is rotated. Such effects occur when light is reflected off the "silk" (the structurally oriented rutile needle inclusions) in a certain way. This is one example where inclusions increase the value of a gemstone. Furthermore, rubies can show color changes—though this occurs very rarely—as well as chatoyancy or the "cat's eye" effect.
             </p>
 
-            <h1 id="documents-reports">Zápisnice</h1>
+            <h2 id="documents-reports">Zápisnice</h2>
 
             <p>
               A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum (aluminium oxide). The red color is caused mainly by the presence of the element chromium. Its name comes from ruber, Latin for red. Other varieties of gem-quality corundum are called sapphires. The ruby is considered one of the four precious stones, together with the sapphire, the emerald, and the diamond.[1]
@@ -350,7 +369,7 @@
                     Člen výskumej skupiny <a href="http://pewe.fiit.stuba.sk">PeWe</a> a člen výskumného semináru počas bakalárskeho štúdia
                   </li>
                   <li>
-                    Zaujíma sa o získavanie a spracovanie znalostí pre potreby vývoja softvéru, aktívne pracuje na projekte <a href="http://perconik.fiit.stuba.sk">PerConIK</a>
+                    Zaujíma sa o získavanie a spracovanie znalostí pre potreby vývoja softvéru, aktívne pracuje na výskumnom projekte <a href="http://perconik.fiit.stuba.sk">PerConIK</a>
                   </li>
                   <li>
                     Lyžuje freeride
@@ -363,13 +382,12 @@
                 </ul>
               </div>
             </div>
-
           </section>
 
         </div>
 
         <div class="col-md-2">
-          <div id="sidebar" class="sidebar" role="complementary">
+          <div id="sidebar" class="sidebar" data-spy="affix" data-offset-top="300" role="complementary">
             <ul class="nav">
               <li>
                 <a href="#about">O projekte</a>
@@ -402,7 +420,11 @@
     <footer>
       <div class="container">
         <p class="text-center text-muted">
-          <small>Copyright 2013 Rastislav Dobšovič, Marek Grznár, Jozef Harinek, Samuel Molnár, Peter Páleník, Dušan Poizl, Pavol Zbell. All Rights Reserved.</small>
+          Copyright 2013 Rastislav Dobšovič, Marek Grznár, Jozef Harinek, Samuel Molnár, Peter Páleník, Dušan Poizl, Pavol Zbell.
+          <br/>
+          <a href="http://stuba.sk">Slovenská technická univerzita v Bratislave</a>,
+          <a href="http://fiit.stuba.sk">Fakulta informatiky a informačných technológií</a>,
+          <a href="http://fiit.stuba.sk/~bielik/courses/tp-slov">Tímový projekt 2013/14</a>
         </p>
       </div>
     </footer>
