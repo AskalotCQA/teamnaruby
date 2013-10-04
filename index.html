@@ -23,15 +23,14 @@
       h1, h2 { padding-top: 100px; }
 
       p { text-align: justify; }
+      span[data-toggle=tooltip] { cursor: help; }
 
-      .text-muted a { color: #999; }
-      .text-muted a:focus, .text-muted a:hover { color: #888; }
+      .jumbotron { background: url("images/pattern.png") #081218; color: #fff; text-shadow: 0 0 20px #fff; }
 
       .media { margin-top: 50px; }
       .media > .pull-left { margin: 100px 40px 0px 0px; }
       .media .list-unstyled { margin-left: 7px; }
       .media .list-unstyled li:first-letter { margin-left: -5px; border-left: 5px solid #eee; }
-      .media .list-unstyled li:first-letter:after { content: " "; }
 
       .nav > li > a { display: inline-block; }
       .nav li > a:focus, .nav li > a:hover { background: transparent; text-decoration: underline; }
@@ -44,6 +43,9 @@
       .sidebar ul ul li.active > a { font-weight: bolder; }
       .sidebar .active ul { display: block; }
       .sidebar li > a, .sidebar li > a.active { border-radius: 5px; }
+
+      .text-muted a { color: #999; }
+      .text-muted a:focus, .text-muted a:hover { color: #888; }
     </style>
   </head>
   <body data-spy="scroll" data-target="#sidebar"> <!-- TODO (zbell) consider data-offset -->
@@ -55,7 +57,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="."><!-- TODO (zbell) update -->tp-1314-13</a>
+          <a class="navbar-brand" href="."><!-- TODO (zbell) update -->Project Name Here</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -70,7 +72,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Project Name Here</h1> <!-- TODO (zbell) add -->
-        <p><abbr title="Community Question Answering">CQA</abbr> informačný systém ďalšej generácie Vám prináša tím naЯuby</p>
+        <p><span data-placement="bottom" data-toggle="tooltip" title="Community Question Answering">CQA</span> informačný systém ďalšej generácie Vám prináša tím naЯuby</p>
       </div>
     </div>
   
@@ -167,8 +169,63 @@
 
           <section>
             <div class="page-header">
-              <h1 id="authors">Autori</h1>
+              <h1 id="authors">
+               Autori
+               <small>na&#x042f;uby &ndash; tím č. 13</small>
+              </h1>
             </div>
+
+            <p>
+              A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum (aluminium oxide). The red color is caused mainly by the presence of the element chromium. Its name comes from ruber, Latin for red. Other varieties of gem-quality corundum are called sapphires. The ruby is considered one of the four precious stones, together with the sapphire, the emerald, and the diamond.[1]
+            <p>
+
+            <h3 class="text-center">Tím č. 13 &mdash; na&#x042f;uby</h2>
+
+            <hr/>
+
+            <ul class="nav nav-justified text-center">
+              <li>
+                <a href="#authors-dobsovic" data-toggle="tooltip" data-placement="bottom" title="Bc. Rastislav Dobšovič">
+                  <img class="img-circle" src="https://gravatar.com/avatar/6c6421dbcdaa3b679a7f3045c06d7dc3?rating=pg&size=80" />
+                </a>
+              </li>
+              <li>
+                <a href="#authors-grznar" data-toggle="tooltip" data-placement="bottom" title="Bc. Marek Grznár">
+                  <img class="img-circle" src="https://gravatar.com/avatar/66951fb0fb20ba104ec37d17d8f7a8a6?rating=pg&size=80" />
+                </a>
+              </li>
+              <li>
+                <a href="#authors-harinek" data-toggle="tooltip" data-placement="bottom" title="Bc. Jozef Harinek">
+                  <img class="img-circle" src="https://gravatar.com/avatar/0eadf3ad055c749bd6b06c37899cc6b3?rating=pg&size=80" />
+                </a>
+              </li>
+              <li>
+                <a href="#authors-molnar" data-toggle="tooltip" data-placement="bottom" title="Bc. Samuel Molnár">
+                  <img class="img-circle" src="https://gravatar.com/avatar/f55298b16490cdfa08cca375b7e1eed5?rating=pg&size=80" />
+                </a>
+              </li>
+              <li>
+                <a href="#authors-palenik" data-toggle="tooltip" data-placement="bottom" title="Bc. Peter Páleník">
+                  <img class="img-circle" src="https://gravatar.com/avatar/926416be73397917b648b9969bf60afd?rating=pg&size=80" />
+                </a>
+              </li>
+              <li>
+                <a href="#authors-poizl" data-toggle="tooltip" data-placement="bottom" title="Bc. Dušan Poizl">
+                  <img class="img-circle" src="https://gravatar.com/avatar/5c3a520715c907c84d1facb9fc856e90?rating=pg&size=80" />
+                </a>
+              </li>
+              <li>
+                <a href="#authors-zbell" data-toggle="tooltip" data-placement="bottom" title="Bc. Pavol Zbell">
+                  <img class="img-circle" src="https://gravatar.com/avatar/731047c9f1caf55b172002cec9f3816e?rating=pg&size=80" />
+                </a>
+              </li>
+            </ul>
+
+            <hr/>
+
+            <p>
+              A ruby is a pink to blood-red colored gemstone, a variety of the mineral corundum (aluminium oxide). The red color is caused mainly by the presence of the element chromium. Its name comes from ruber, Latin for red. Other varieties of gem-quality corundum are called sapphires. The ruby is considered one of the four precious stones, together with the sapphire, the emerald, and the diamond.[1]
+            <p>
 
             <div class="media">
               <img class="img-circle media-object pull-left" src="https://gravatar.com/avatar/6c6421dbcdaa3b679a7f3045c06d7dc3?rating=pg&size=180" />
@@ -431,5 +488,11 @@
     
     <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+        $("[data-toggle=tooltip]").tooltip()
+      })
+    </script>
   </body>
 </html>
