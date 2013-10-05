@@ -41,7 +41,6 @@
       .sidebar ul ul li.active > a { font-weight: bolder; }
       .sidebar .active ul { display: block; }
       .sidebar li > a, .sidebar li > a.active { border-radius: 5px; }
-      .sidebar.hidden-print { display: none; }
 
       .text-muted a { color: #999; }
       .text-muted a:focus, .text-muted a:hover { color: #888; }
@@ -80,7 +79,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-10" role="main">
+        <div class="col-xs-12 col-md-10" role="main">
           <div class="row">
             <div class="col-md-6">
               <ul class="nav">
@@ -543,8 +542,8 @@
           </section>
         </div>
 
-        <div class="col-md-2">
-          <div id="sidebar" class="sidebar hidden-print" data-spy="affix" data-offset-top="300" role="complementary">
+        <div class="col-md-2 hidden-xs hidden-sm hidden-print">
+          <div id="sidebar" class="sidebar" data-spy="affix" data-offset-top="300" role="complementary">
             <ul class="nav">
               <li>
                 <a href="#about">O projekte</a>
@@ -587,10 +586,10 @@
       <div class="container">
         <p class="text-center text-muted">
           Copyright 2013 Rastislav Dobšovič, Marek Grznár, Jozef Harinek, Samuel Molnár, Peter Páleník, Dušan Poizl, Pavol Zbell.
-          <br/>
-          <a href="http://stuba.sk">Slovenská technická univerzita v Bratislave</a>,
-          <a href="http://fiit.stuba.sk">Fakulta informatiky a informačných technológií</a>,
-          <a href="http://fiit.stuba.sk/~bielik/courses/tp-slov">Tímový projekt 2013/14</a>
+          <br class="visible-md visible-lg" />
+          <a href="http://stuba.sk">Slovenská technická univerzita v&nbsp;Bratislave</a>,
+          <a href="http://fiit.stuba.sk">Fakulta informatiky a&nbsp;informačných technológií</a>,
+          <a href="http://fiit.stuba.sk/~bielik/courses/tp-slov">Tímový projekt&nbsp;2013/14</a>
         </p>
       </div>
     </footer>
