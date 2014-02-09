@@ -1,7 +1,9 @@
 The MIT License (MIT)
 
 Copyright (c) 2013 Rastislav Dobšovič, Marek Grznár, Jozef Harinek,
-Samuel Molnár, Peter Páleník, Dušan Poizl, Pavol Zbell
+Samuel Molnár, Peter Páleník, Dušan Poizl, Ivan Srba and Pavol Zbell
+at Faculty of Informatics and Information Technologies,
+Slovak University of Technology in Bratislava
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

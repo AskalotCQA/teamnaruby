@@ -6,4 +6,5 @@ at Slovak University of Technology in Bratislava.
 
 ## License
 
-[MIT License](http://opensource.org/licenses/MIT)
+This software is released under the [MIT License](LICENSE.md).
+
