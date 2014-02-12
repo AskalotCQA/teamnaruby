@@ -15,6 +15,8 @@
     <![endif]-->
 
     <style type="text/css">
+      * { outline: none !important; }
+
       body { margin-top: 50px; font-size: 16px; }
       header { margin: 0; }
       footer { margin: 400px 0 100px; font-size: 14px; }
@@ -24,9 +26,12 @@
       p { text-align: justify; }
       span[data-toggle=tooltip] { cursor: help; }
 
+      .alert-inline { display: inline-block; margin-top: 30px; }
+
       .jumbotron { background: url("images/pattern.png") #0b1922; color: #fff; text-shadow: 0 0 96px #5bc0de; }
       .jumbotron p { text-align: left; }
-      .staging { display: inline-block; margin-top: 30px; }
+
+      .link-muted, .link-muted:focus, .link-muted:hover { color: #333; }
 
       .media { margin-top: 50px; }
       .media > .pull-left { margin: 100px 40px 0 0; }
@@ -100,11 +105,15 @@
 
           <div class="row">
             <div class="col-md-12">
-              <div class="alert alert-info staging">
+              <div class="alert alert-info alert-inline">
                 <strong class="text-capital">Askalot</strong> &ndash;
-                <a href="http://37.205.9.136:4000" target="_blank">ukážka systému v aktuálne stabilnej verzii</a>
+                <a href="http://askalot.fiit.stuba.sk" target="_blank">stabilná verzia systému</a>
                 <i class="icon-external-link-sign"></i>
               </div>
+              <span class="text-muted">
+                a <a href="http://37.205.9.136:4000" target="_blank">aktuálna vývojová vetva systému</a>
+                <i class="icon-external-link-sign"></i>
+              </span>
             </div>
           </div>
 
@@ -610,12 +619,20 @@
             </div>
 
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-7">
                 <h3>Napíšte nám <i class="icon-smile"></i></h3>
 
-                <a class="btn btn-primary btn-lg" href="mailto:tp-1314-13@googlegroups.com">
-                  <i class="icon-envelope"></i> tp-1314-13@googlegroups.com
-                </a>
+                <p>
+                  <a class="btn btn-default btn-lg" href="mailto:tp-1314-13@googlegroups.com">
+                    <i class="icon-envelope"></i> tp-1314-13@googlegroups.com
+                  </a>
+                </p>
+
+                <p>
+                  <a class="btn btn-default btn-lg" href="mailto:askalot@fiit.stuba.sk">
+                    <i class="icon-envelope"></i> askalot@fiit.stuba.sk
+                  </a>
+                </p>
               </div>
 
               <div class="col-md-5">
@@ -628,7 +645,7 @@
                   842 16 Bratislava 4 - Karlova Ves<br/>
                   Slovensko<br/>
                   <br/>
-                  <span data-toggle="tooltip" data-placement="bottom" title="Global Positioning System">GPS</span>: <a href="https://www.google.com/maps?t=m&amp;ll=48.15342100000003%2C17.072221299999992&amp;spn=0.005976687506477521%2C0.011944952557732511&amp;output=classic&amp;cid=0x8b585229fc0ae860">48.153429, 17.071716</a>
+                  <span data-toggle="tooltip" data-placement="bottom" title="Global Positioning System">GPS</span>: <a class="link-muted" href="https://www.google.com/maps?t=m&amp;ll=48.15342100000003%2C17.072221299999992&amp;spn=0.005976687506477521%2C0.011944952557732511&amp;output=classic&amp;cid=0x8b585229fc0ae860">48.153429, 17.071716</a>
                 </address>
               </div>
             </div>
