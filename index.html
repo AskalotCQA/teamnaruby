@@ -22,12 +22,12 @@
       header { margin: 0; }
       footer { margin: 400px 0 100px; font-size: 14px; }
 
-      h1, h2 { padding-top: 100px; }
+      h1, h2 { padding-top: 75px; }
 
       p { text-align: justify; }
       span[data-toggle=tooltip] { cursor: help; }
 
-      .alert-inline { display: inline-block; margin-top: 30px; }
+      .btn-production { display: inline-block; margin-top: 30px; }
 
       .jumbotron { background: url("images/pattern.png") #0b1922; color: #fff; text-shadow: 0 0 96px #5bc0de; }
       .jumbotron p { text-align: left; }
@@ -42,7 +42,7 @@
       .nav > li > a { display: inline-block; }
       .nav li > a:focus, .nav li > a:hover { background: transparent; text-decoration: underline; }
 
-      .sidebar.affix { position: fixed; top: 100px; }
+      .sidebar.affix { position: fixed; top: 75px; }
       .sidebar ul ul { display: none; font-size: 14px; }
       .sidebar ul ul li > a { padding-left: 25px; }
       .sidebar ul li.active > a { font-weight: bolder; }
@@ -106,15 +106,9 @@
 
           <div class="row">
             <div class="col-md-12">
-              <div class="alert alert-info alert-inline">
-                <strong class="text-capital">Askalot</strong> &ndash;
-                <a href="http://askalot.fiit.stuba.sk" target="_blank">stabilná verzia systému</a>
-                <i class="icon-external-link"></i>
-              </div>
-              <span class="text-muted">
-                a <a href="http://37.205.9.136:4000" target="_blank">aktuálna vývojová vetva systému</a>
-                <i class="icon-external-link"></i>
-              </span>
+              <a class="btn btn-production btn-success btn-lg" href="http://askalot.fiit.stuba.sk">
+                <strong class="text-capital">Askalot</strong> &ndash; stabilná verzia systému
+              </a>
             </div>
           </div>
 
